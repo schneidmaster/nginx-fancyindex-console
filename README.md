@@ -30,4 +30,4 @@ To:
 
 ####Credits:
 
-Based on [Nginx-Fancyindex-Theme](https://raw.githubusercontent.com/TheInsomniac/Nginx-Fancyindex-Theme).
+Based on [Nginx-Fancyindex-Theme](https://github.com/TheInsomniac/Nginx-Fancyindex-Theme).
