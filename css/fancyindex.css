@@ -1,0 +1,117 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+html, body {
+  font-size: 100%;
+  font-family: 'Courier New';
+  background-color: #333333;
+  color: #33ff66;
+  margin: 0px;
+}
+
+a, a:hover, a:visited {
+  color: #33ff66;
+  text-decoration: none;
+}
+
+.box {
+  width: 100%;
+}
+
+.box .box-header {
+  font-weight: 500;
+  font-style: normal;
+  text-transform: uppercase;
+  height: 45px;
+  font-size: 16px;
+  border-bottom: 1px solid #33ff66;
+}
+
+.box .box-header .box-header-content {
+  padding: 12px 20px;
+  font-weight: 700;
+  position: relative;
+}
+
+.box.box-breadcrumbs .box-header {
+  height: auto;
+}
+
+.box.box-breadcrumbs .box-header-content {
+  padding: 0;
+}
+
+.breadcrumbs a {
+  position: relative;
+  display: inline-block;
+  padding: 8px 18px 8px 10px;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.breadcrumbs a:not(:last-child):after {
+  content: '>\a0';
+  padding-left: 12px;
+  padding-top: 8px;
+}
+
+.breadcrumbs a:after {
+  display: block;
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 20px;
+}
+tbody tr:first-child {
+  display: none;
+}
+
+thead {
+  display: none;
+}
+
+h1 {
+  font-size: 1.5rem;
+  display: none;
+}
+
+#list {
+  padding:5px;
+  width:100%;
+}
+
+@media screen and (max-width: 1024px) {
+  tr > td:nth-child(3) {
+    display: none;
+  }
+  thead > tr > th:nth-child(3) {
+    display: none;
+  }
+  .box .box-content {
+    padding-top: 20px;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
